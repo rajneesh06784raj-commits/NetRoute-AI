@@ -1,0 +1,7 @@
+{
+  "serverId": "server-1",
+  "latencyMs": 202,
+  "packetLossPercent": 0,
+  "loadPercent": 0,
+  "status": "UP"
+}

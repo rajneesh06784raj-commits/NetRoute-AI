@@ -1,0 +1,43 @@
+### 1. Network Status
+GET http://localhost:8080/api/network-status
+
+
+### 2. Prediction
+POST http://localhost:8080/network/prediction
+Content-Type: application/json
+
+{
+  "serverId": "server-1",
+  "riskScore": 80.5,
+  "riskLevel": "HIGH"
+}
+
+
+### 3. Decision
+POST http://localhost:8080/network/decision
+Content-Type: application/json
+
+{
+  "action": "REDISTRIBUTE",
+  "fromServer": "server-1",
+  "toServer": "server-2",
+  "reason": "High risk detected",
+  "verified": true
+}
+
+
+### 4. Traffic Redistribute
+POST http://localhost:8080/traffic/redistribute
+Content-Type: application/json
+
+{
+  "action": "REDISTRIBUTE",
+  "fromServer": "server-1",
+  "toServer": "server-2",
+  "reason": "High risk detected",
+  "verified": true
+}
+
+
+### 5. Check Active Server
+GET http://localhost:8080/traffic/active-server

@@ -1,0 +1,1 @@
+{"server":"server-1","status":"UP"}
