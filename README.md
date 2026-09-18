@@ -32,11 +32,8 @@ NetRoute-AI is an intelligent network routing and monitoring system that detects
 
 ## 🏗️ Architecture
 
-```text
-C++ Network Monitor
-        ↓
-   Java Backend
-        ↓
-    Python AI/ML
-        ↓
-   React Dashboard
+C++ Monitor → Java Backend → Python AI → React Dashboard
+
+## 👨‍💻 Developer
+
+Built by Rajneesh Raj  
